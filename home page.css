@@ -1,0 +1,91 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: #f4f4f4;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input {
+    padding: 5px;
+    width: 200px;
+}
+
+button {
+    padding: 5px 10px;
+    background: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background: #333;
+}
+
+nav button {
+    background: #555;
+}
+
+/* Book Section */
+h2 {
+    margin: 20px;
+}
+
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 books per row */
+    gap: 30px; /* More space between books */
+    padding: 20px;
+    justify-items: center; /* Centers books in their grid cells */
+}
+
+.book {
+    text-align: center;
+    width: 160px; /* More width */
+}
+
+.book-cover {
+    width: 150px; /* Increased cover size */
+    height: 230px; /* Taller book covers */
+    background: lightgray;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 1400px) {
+    .book-container {
+        grid-template-columns: repeat(5, 1fr); /* 5 books per row on smaller screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .book-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 books per row on tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .book-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 books per row on phones */
+    }
+}
