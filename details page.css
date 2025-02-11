@@ -1,0 +1,76 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Book Details */
+.book-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.book-cover img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.book-info {
+    max-width: 600px;
+    padding-left: 20px;
+}
+
+.book-info h2 {
+    margin-top: 0;
+}
+
+.book-info p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.book-info h3 {
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .book-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-cover img {
+        width: 150px;
+    }
+
+    .book-info {
+        max-width: 100%;
+    }
+}
