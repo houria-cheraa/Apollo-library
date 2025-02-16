@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf8ec;
+    height: auto;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #b28c4f;
+}
+
+.logo span {
+    font-weight: normal;
+    color: #666;
+}
+
+
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #b28c4f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.auth-buttons button {
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sign-up {
+    background-color: #b28c4f;
+    color: white;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.sign-in {
+    background-color: white;
+    border: 1px solid #b28c4f;
+    border-radius: 20px;
+    color: #b28c4f;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Categories */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: white;
+}
+
+.categories button {
+    margin: 1%;
+    padding: 10px;
+    gap: 100px;
+    border: 1px solid #b28c4f;
+    background-color: #e2c48f;
+    color: black;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+/* Featured Books Section */
+.featured-books,
+.cook-books {
+    padding: 30px;
+    text-align: center;
+}
+/* Center the book list and enable scrolling */
+.book-list {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;
+    gap: 15px;
+    overflow-x: auto;  /* Enable horizontal scrolling */
+    white-space: nowrap;  /* Prevent line breaks */
+    padding-bottom: 10px;
+    scrollbar-width: none;  /* Hide scrollbar (Firefox) */
+    -ms-overflow-style: none; /* Hide scrollbar (IE & Edge) */
+}
+
+/* Book Placeholder Style */
+.book-placeholder {
+    width: 150px;
+    height: 230px;
+    background-color: #ddd;
+    border-radius: 5px;
+    flex-shrink: 0; /* Prevent resizing */
+}
+
+/* Collections */
+.collections {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collection-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.collection-placeholder {
+    width: 250px;
+    height: 300px;
+}
