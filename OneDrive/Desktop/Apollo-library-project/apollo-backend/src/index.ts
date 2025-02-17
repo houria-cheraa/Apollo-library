@@ -3,7 +3,7 @@ import app from "./app";
 import connectDB from "./db/index";
 import logger from "./utils/logger";
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 7000;
 
 connectDB()
     .then(() => {

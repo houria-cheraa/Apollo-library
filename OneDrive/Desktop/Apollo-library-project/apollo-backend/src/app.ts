@@ -8,12 +8,15 @@ const app = express();
 
 const morganFormat = ":method :url :status :response-time ms";
 
+const allowedOrigins = process.env.CORS_ORIGIN?.split(",") || ["http://localhost:5173"];
+
 app.use(
     cors({
-        origin: process.env.CORS_ORIGIN,
+        origin: allowedOrigins,
         credentials: true,
     })
 );
+
 app.use(express.json({ limit: "16kb" }));
 app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(express.static("public"));
@@ -47,5 +50,6 @@ app.use("/api/v1/authors", authorRouter);
 app.use("/api/v1/categories", categoryRouter);
 app.use("/api/v1/books", bookRouter);
 app.use("/api/v1/collections", collectionRouter);
+
 
 export default app;

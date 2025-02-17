@@ -27,7 +27,7 @@ const generateAccessAndRefreshToken = async (customerId: any) => {
 };
 
 const registerCustomer = asyncHandler(async (req: Request, res: Response) => {
-    const { firstName, lastName, email, password, gender } = req.body;
+    const { firstName, lastName, email, password } = req.body;
 
     if (
         [firstName, lastName, email, password].some(
@@ -50,7 +50,6 @@ const registerCustomer = asyncHandler(async (req: Request, res: Response) => {
         lastName,
         email: email?.toLowerCase(),
         password,
-        gender,
         confirmationCode,
     });
 

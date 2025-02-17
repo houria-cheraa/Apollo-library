@@ -22,11 +22,6 @@ const customerSchema = new Schema(
             required: [true, "Last Name is required"],
             trim: true,
         },
-        gender: {
-            type: String,
-            enum: ["Male", "Female"],
-            required: [true, "Gender is required"],
-        },
         wishlist: [
             {
                 type: [Schema.Types.ObjectId],

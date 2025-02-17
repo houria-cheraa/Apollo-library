@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const book_controller_1 = require("../controllers/book.controller");
+const multer_middleware_1 = require("../middlewares/multer.middleware");
+const router = (0, express_1.Router)();
+router.route("/").get(book_controller_1.getAllBooks);
+router.route("/:id").get(book_controller_1.getBook);
+router.route("/create").post(multer_middleware_1.upload.single("cover"), book_controller_1.createBook);
+router.route("/update/:id").put(book_controller_1.updateBook);
+router.route("/delete/:id").delete(book_controller_1.deleteBook);
+exports.default = router;

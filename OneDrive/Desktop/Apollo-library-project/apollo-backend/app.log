@@ -1,0 +1,120 @@
+{"errorLabelSet":{},"level":"\u001b[31merror\u001b[39m","message":"Error connecting to the database:  Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{"apollo-app-shard-00-00.u99er.mongodb.net:27017":{"$clusterTime":null,"address":"apollo-app-shard-00-00.u99er.mongodb.net:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":85098272,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"},"apollo-app-shard-00-01.u99er.mongodb.net:27017":{"$clusterTime":null,"address":"apollo-app-shard-00-01.u99er.mongodb.net:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":85098270,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"},"apollo-app-shard-00-02.u99er.mongodb.net:27017":{"$clusterTime":null,"address":"apollo-app-shard-00-02.u99er.mongodb.net:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":85098867,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"}},"setName":"atlas-qe29o5-shard-0","stale":false,"type":"ReplicaSetNoPrimary"},"stack":"MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/\n    at _handleConnectionErrors (C:\\Users\\Dell\\OneDrive\\Desktop\\Apollo-library-project\\apollo-backend\\node_modules\\mongoose\\lib\\connection.js:1163:11)\n    at NativeConnection.openUri (C:\\Users\\Dell\\OneDrive\\Desktop\\Apollo-library-project\\apollo-backend\\node_modules\\mongoose\\lib\\connection.js:1094:11)","timestamp":"2025-02-16T14:09:46.984Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Connected to the database! DB Host: apollo-app-shard-00-02.u99er.mongodb.net","timestamp":"2025-02-16T18:21:19.296Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port http://localhost:7000","timestamp":"2025-02-16T18:21:19.305Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"3.618\"}","timestamp":"2025-02-16T18:21:32.786Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Connected to the database! DB Host: apollo-app-shard-00-02.u99er.mongodb.net","timestamp":"2025-02-16T18:48:47.429Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port http://localhost:7000","timestamp":"2025-02-16T18:48:47.447Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Connected to the database! DB Host: apollo-app-shard-00-00.u99er.mongodb.net","timestamp":"2025-02-16T18:50:32.397Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port http://localhost:7000","timestamp":"2025-02-16T18:50:32.406Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/search?q=\",\"status\":\"404\",\"responseTime\":\"2.441\"}","timestamp":"2025-02-16T19:36:16.267Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/search?q=book\",\"status\":\"404\",\"responseTime\":\"0.648\"}","timestamp":"2025-02-16T19:36:21.092Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/search?q=book\",\"status\":\"404\",\"responseTime\":\"0.260\"}","timestamp":"2025-02-16T19:36:22.143Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/search?q=\",\"status\":\"404\",\"responseTime\":\"0.463\"}","timestamp":"2025-02-16T19:58:38.512Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/?q=book\",\"status\":\"404\",\"responseTime\":\"0.643\"}","timestamp":"2025-02-16T19:59:01.980Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/?q=book\",\"status\":\"404\",\"responseTime\":\"0.415\"}","timestamp":"2025-02-16T19:59:02.926Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/?q=book\",\"status\":\"404\",\"responseTime\":\"0.413\"}","timestamp":"2025-02-16T19:59:29.433Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/?q=book\",\"status\":\"404\",\"responseTime\":\"0.579\"}","timestamp":"2025-02-16T19:59:30.132Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/?q=book\",\"status\":\"404\",\"responseTime\":\"0.687\"}","timestamp":"2025-02-16T19:59:30.138Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/?q=book\",\"status\":\"404\",\"responseTime\":\"0.300\"}","timestamp":"2025-02-16T19:59:30.142Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"0.821\"}","timestamp":"2025-02-16T20:11:20.894Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Connected to the database! DB Host: apollo-app-shard-00-00.u99er.mongodb.net","timestamp":"2025-02-16T20:29:31.943Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port http://localhost:7000","timestamp":"2025-02-16T20:29:31.951Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"2.535\"}","timestamp":"2025-02-16T20:46:14.989Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Connected to the database! DB Host: apollo-app-shard-00-02.u99er.mongodb.net","timestamp":"2025-02-16T21:21:04.022Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port http://localhost:7000","timestamp":"2025-02-16T21:21:04.037Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"5.463\"}","timestamp":"2025-02-16T21:21:13.188Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/register\",\"status\":\"404\",\"responseTime\":\"0.524\"}","timestamp":"2025-02-16T21:21:36.854Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/v1/customer/register\",\"status\":\"404\",\"responseTime\":\"0.495\"}","timestamp":"2025-02-16T21:38:00.351Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/v1/customers/register\",\"status\":\"500\",\"responseTime\":\"164.966\"}","timestamp":"2025-02-16T21:39:08.923Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/v1/customers/register\",\"status\":\"500\",\"responseTime\":\"74.994\"}","timestamp":"2025-02-16T22:10:25.895Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Connected to the database! DB Host: apollo-app-shard-00-00.u99er.mongodb.net","timestamp":"2025-02-16T22:18:15.951Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port http://localhost:7000","timestamp":"2025-02-16T22:18:15.972Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"8.948\"}","timestamp":"2025-02-16T22:18:48.278Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api/v1/healthcheck\",\"status\":\"200\",\"responseTime\":\"4.835\"}","timestamp":"2025-02-16T22:23:29.471Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/favicon.ico\",\"status\":\"404\",\"responseTime\":\"1.865\"}","timestamp":"2025-02-16T22:23:29.659Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api/v1/healthcheck\",\"status\":\"200\",\"responseTime\":\"0.914\"}","timestamp":"2025-02-16T22:30:22.729Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/v1/customers/register\",\"status\":\"201\",\"responseTime\":\"5431.248\"}","timestamp":"2025-02-16T22:37:40.545Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Connected to the database! DB Host: apollo-app-shard-00-01.u99er.mongodb.net","timestamp":"2025-02-16T22:40:33.746Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port http://localhost:7000","timestamp":"2025-02-16T22:40:33.759Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"7.445\"}","timestamp":"2025-02-16T22:40:38.633Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Connected to the database! DB Host: apollo-app-shard-00-01.u99er.mongodb.net","timestamp":"2025-02-16T22:46:34.994Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port http://localhost:7000","timestamp":"2025-02-16T22:46:35.007Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"4.846\"}","timestamp":"2025-02-16T22:46:50.811Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"0.828\"}","timestamp":"2025-02-16T22:46:52.089Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"0.398\"}","timestamp":"2025-02-16T22:46:52.849Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Connected to the database! DB Host: apollo-app-shard-00-02.u99er.mongodb.net","timestamp":"2025-02-16T22:47:27.046Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port http://localhost:7000","timestamp":"2025-02-16T22:47:27.063Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"5.044\"}","timestamp":"2025-02-16T22:47:30.008Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"1.045\"}","timestamp":"2025-02-16T22:47:38.900Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Connected to the database! DB Host: apollo-app-shard-00-00.u99er.mongodb.net","timestamp":"2025-02-16T22:48:16.777Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port http://localhost:7000","timestamp":"2025-02-16T22:48:16.789Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Connected to the database! DB Host: apollo-app-shard-00-01.u99er.mongodb.net","timestamp":"2025-02-17T00:51:17.774Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port http://localhost:7000","timestamp":"2025-02-17T00:51:17.789Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"3.839\"}","timestamp":"2025-02-17T00:51:52.348Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"1.258\"}","timestamp":"2025-02-17T01:04:40.951Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"0.591\"}","timestamp":"2025-02-17T01:07:44.449Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Connected to the database! DB Host: apollo-app-shard-00-01.u99er.mongodb.net","timestamp":"2025-02-17T01:12:32.467Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port http://localhost:7000","timestamp":"2025-02-17T01:12:32.478Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api/v1/\",\"status\":\"404\",\"responseTime\":\"4.139\"}","timestamp":"2025-02-17T01:23:39.245Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/v1/customers/register\",\"status\":\"500\",\"responseTime\":\"187.999\"}","timestamp":"2025-02-17T01:24:55.166Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/v1/customers/register\",\"status\":\"409\",\"responseTime\":\"99.397\"}","timestamp":"2025-02-17T01:27:19.421Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api/v1/customers/register\",\"status\":\"404\",\"responseTime\":\"0.557\"}","timestamp":"2025-02-17T01:28:56.788Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/v1/customers/register\",\"status\":\"500\",\"responseTime\":\"89.458\"}","timestamp":"2025-02-17T01:32:36.700Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api/v1/customers/register\",\"status\":\"404\",\"responseTime\":\"0.410\"}","timestamp":"2025-02-17T01:32:52.210Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api/v1/customers/register\",\"status\":\"404\",\"responseTime\":\"0.710\"}","timestamp":"2025-02-17T01:36:42.598Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api/v1/customers/register\",\"status\":\"404\",\"responseTime\":\"0.703\"}","timestamp":"2025-02-17T01:37:16.425Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Connected to the database! DB Host: apollo-app-shard-00-00.u99er.mongodb.net","timestamp":"2025-02-17T01:43:14.649Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port http://localhost:7000","timestamp":"2025-02-17T01:43:14.666Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"4.984\"}","timestamp":"2025-02-17T01:43:29.400Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"0.924\"}","timestamp":"2025-02-17T01:43:31.351Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api/v1/customers/register\",\"status\":\"404\",\"responseTime\":\"1.224\"}","timestamp":"2025-02-17T01:46:10.280Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"0.684\"}","timestamp":"2025-02-17T01:48:53.124Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"0.484\"}","timestamp":"2025-02-17T01:48:54.826Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"0.622\"}","timestamp":"2025-02-17T01:48:56.174Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"0.396\"}","timestamp":"2025-02-17T01:48:57.726Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/v1/customers/register\",\"status\":\"500\",\"responseTime\":\"170.203\"}","timestamp":"2025-02-17T01:50:27.935Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Connected to the database! DB Host: apollo-app-shard-00-01.u99er.mongodb.net","timestamp":"2025-02-17T02:00:12.900Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port http://localhost:7000","timestamp":"2025-02-17T02:00:12.914Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"4.287\"}","timestamp":"2025-02-17T02:00:32.565Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/v1/customers/register\",\"status\":\"409\",\"responseTime\":\"126.022\"}","timestamp":"2025-02-17T02:08:05.253Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"//api/v1/customers/register\",\"status\":\"404\",\"responseTime\":\"0.553\"}","timestamp":"2025-02-17T02:09:18.454Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api/v1/customers/register\",\"status\":\"404\",\"responseTime\":\"1.080\"}","timestamp":"2025-02-17T02:09:27.787Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Connected to the database! DB Host: apollo-app-shard-00-01.u99er.mongodb.net","timestamp":"2025-02-17T02:10:02.102Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port http://localhost:7000","timestamp":"2025-02-17T02:10:02.118Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Connected to the database! DB Host: apollo-app-shard-00-02.u99er.mongodb.net","timestamp":"2025-02-17T02:10:42.232Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port http://localhost:7000","timestamp":"2025-02-17T02:10:42.249Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"4.179\"}","timestamp":"2025-02-17T02:10:47.574Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"//api/v1/customers/register\",\"status\":\"404\",\"responseTime\":\"2.541\"}","timestamp":"2025-02-17T02:10:59.446Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api/v1/customers/register\",\"status\":\"404\",\"responseTime\":\"0.770\"}","timestamp":"2025-02-17T02:11:07.487Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api/v1/books\",\"status\":\"200\",\"responseTime\":\"95.732\"}","timestamp":"2025-02-17T02:13:30.791Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api/v1/books/\",\"status\":\"200\",\"responseTime\":\"80.756\"}","timestamp":"2025-02-17T02:13:42.217Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Connected to the database! DB Host: apollo-app-shard-00-00.u99er.mongodb.net","timestamp":"2025-02-17T02:18:41.322Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port http://localhost:7000","timestamp":"2025-02-17T02:18:41.332Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"6.432\"}","timestamp":"2025-02-17T02:18:49.398Z"}
+{"code":"ECONNREFUSED","hostname":"_mongodb._tcp.apollo-app.u99er.mongodb.net","level":"\u001b[31merror\u001b[39m","message":"Error connecting to the database:  querySrv ECONNREFUSED _mongodb._tcp.apollo-app.u99er.mongodb.net","stack":"Error: querySrv ECONNREFUSED _mongodb._tcp.apollo-app.u99er.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:293:17)","syscall":"querySrv","timestamp":"2025-02-17T12:10:32.060Z"}
+{"code":"ETIMEOUT","hostname":"_mongodb._tcp.apollo-app.u99er.mongodb.net","level":"\u001b[31merror\u001b[39m","message":"Error connecting to the database:  querySrv ETIMEOUT _mongodb._tcp.apollo-app.u99er.mongodb.net","stack":"Error: querySrv ETIMEOUT _mongodb._tcp.apollo-app.u99er.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:293:17)","syscall":"querySrv","timestamp":"2025-02-17T12:12:50.762Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Connected to the database! DB Host: apollo-app-shard-00-02.u99er.mongodb.net","timestamp":"2025-02-17T12:13:59.412Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port http://localhost:7000","timestamp":"2025-02-17T12:13:59.440Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/v1/customers/register\",\"status\":\"500\",\"responseTime\":\"189.117\"}","timestamp":"2025-02-17T12:14:15.855Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Connected to the database! DB Host: apollo-app-shard-00-01.u99er.mongodb.net","timestamp":"2025-02-17T12:16:58.751Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port http://localhost:7000","timestamp":"2025-02-17T12:16:58.776Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/v1/customers/register\",\"status\":\"500\",\"responseTime\":\"209.981\"}","timestamp":"2025-02-17T12:17:05.400Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Connected to the database! DB Host: apollo-app-shard-00-02.u99er.mongodb.net","timestamp":"2025-02-17T12:17:39.150Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port http://localhost:7000","timestamp":"2025-02-17T12:17:39.190Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/v1/customers/register\",\"status\":\"500\",\"responseTime\":\"178.024\"}","timestamp":"2025-02-17T12:18:41.772Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Connected to the database! DB Host: apollo-app-shard-00-00.u99er.mongodb.net","timestamp":"2025-02-17T12:21:00.001Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port http://localhost:7000","timestamp":"2025-02-17T12:21:00.054Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Connected to the database! DB Host: apollo-app-shard-00-01.u99er.mongodb.net","timestamp":"2025-02-17T12:21:31.945Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port http://localhost:7000","timestamp":"2025-02-17T12:21:31.975Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/v1/customers/register\",\"status\":\"201\",\"responseTime\":\"1753.571\"}","timestamp":"2025-02-17T12:21:44.264Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/v1/customers/register\",\"status\":\"409\",\"responseTime\":\"375.041\"}","timestamp":"2025-02-17T12:30:27.258Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/v1/customers/register\",\"status\":\"201\",\"responseTime\":\"9571.173\"}","timestamp":"2025-02-17T12:30:32.369Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/v1/customers/register\",\"status\":\"201\",\"responseTime\":\"1690.278\"}","timestamp":"2025-02-17T12:31:23.043Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/v1/customers/login\",\"status\":\"404\",\"responseTime\":\"294.527\"}","timestamp":"2025-02-17T12:50:21.143Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/v1/forgot-password\",\"status\":\"404\",\"responseTime\":\"0.379\"}","timestamp":"2025-02-17T12:59:21.313Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/v1/forgot-password\",\"status\":\"404\",\"responseTime\":\"0.329\"}","timestamp":"2025-02-17T12:59:24.326Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/v1/customers/register\",\"status\":\"500\",\"responseTime\":\"30318.217\"}","timestamp":"2025-02-17T13:41:54.943Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/v1/customers/register\",\"status\":\"201\",\"responseTime\":\"15516.310\"}","timestamp":"2025-02-17T13:41:56.272Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/api/v1/customers/register\",\"status\":\"201\",\"responseTime\":\"1666.636\"}","timestamp":"2025-02-17T13:42:37.582Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api/v1/customers/confirm-email/06403a6cdb8ffe7959685dff25c489ea7c225512fa0f56b7902d9d401e65382d\",\"status\":\"200\",\"responseTime\":\"103.460\"}","timestamp":"2025-02-17T13:43:01.966Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/favicon.ico\",\"status\":\"404\",\"responseTime\":\"1.043\"}","timestamp":"2025-02-17T13:43:03.668Z"}
